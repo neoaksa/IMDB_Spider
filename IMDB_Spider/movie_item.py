@@ -7,4 +7,5 @@ class MovieItem(scrapy.Item):
     stars = scrapy.Field()
     popularity = scrapy.Field()
     review = scrapy.Field()
+    rating = scrapy.Field()
 
