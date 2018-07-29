@@ -16,3 +16,9 @@ class MovieReview(scrapy.Item):
     id = scrapy.Field()
     movie_id = scrapy.Field()
     content = scrapy.Field()
+
+class MovieStar(scrapy.Item):
+    id = scrapy.Field()
+    name = scrapy.Field()
+    born_year = scrapy.Field()
+    born_area = scrapy.Field()

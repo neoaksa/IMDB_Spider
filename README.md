@@ -31,3 +31,30 @@ name = 'imdbspider'
 allowed_domains = ['imdb.com']
 start_urls = ['http://www.imdb.com/chart/top',]
 ```
+
+### How scrapy works
+![img](img/scrapy_workflow.jpg)
+1. Engine gets request object from spiders(IMDb_spider.py)
+2. Engine handles request object to scheduler
+3. Engine gets next request from scheduler
+4. Engine sends the request to downloader through middleware
+5. Downloader sends response back to engine through middleware
+6. Engine transfers response to spider for parsing
+7. Spider creates scrapy Items and sends new request to Engine
+8. Engine sends Items to pipelines
+In this process, Engine will receive request from scheduler until it is emtpy. Framewrok starts with `start_url`, end with `pipelines`. 
+Enigne, Downloader and Scheduler are already completed by framework. we need to code spiders and pipelines, also do
+some configure stuffs.
+
+### Some commands in scrapy
+startproject: create a new project
+
+genspider: create a spider
+
+setting: get spider config info
+
+crawl: start to run crawling
+
+list: show all project names
+
+shell: start URL parse
