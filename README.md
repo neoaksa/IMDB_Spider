@@ -7,6 +7,7 @@ This project crawls IMDb top 250 movies information by using Scrapy which is a "
 > movie_item.py
 >   * MovieItem # Movie Item class
 >   * MovieReview # Review Item for each Movie
+>   * MovieStar # Movie star Item
 
 > pipelines.py 
 >   * handle the two items for saving to separated files
@@ -15,6 +16,7 @@ This project crawls IMDb top 250 movies information by using Scrapy which is a "
 > Outputs:(I didn't upload it to Git.)
 >   * MovieItem.csv # save Movie Items
 >   * MovieReview.csv # save Movie Reviews
+>   * MovieStar.csv # save Movie star info
 
 > spiders/settings.py
 ```python

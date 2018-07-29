@@ -71,7 +71,7 @@ class Pipeline(object):
 
     def handleMovieStar(self,item):
         with open('MovieStar.csv', "a") as file:
-            if item['id'] not in self.starID:
+            if item['id'] not in self.starID and item['id']:
                 w = csv.DictWriter(file, item.__dict__['_values'].keys())
                 if self.starFlag:
                     w.writeheader()
