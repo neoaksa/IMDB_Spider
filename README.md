@@ -60,3 +60,28 @@ crawl: start to run crawling
 list: show all project names
 
 shell: start URL parse
+
+### Report
+1. star anlaysis
+Accordig this breif table blew, we can find `Robert De Niro` took the most movies in top 250 list. Followed by `Harrison`,`Tom` and `Leonardo`.
+
+![img](/img/num_movie.png)
+
+165 movies in top 250 movies are performed by the 100 best stars who is defined that took more than one movie in the list. We picked up these 100 movie stars for future star research. 83% movie star only took one movie in the list.
+
+![img](/img/num_movie2.png)
+
+I picked up a few stars who took more than 2 movies in the top 250 list, and create a relationship netwrok for them.We can find the major 5 blocks, if we loose the filter, maybe we can find more.
+
+![img](/img/social.png)
+
+From picked 100 movie stars, most of them are born between 1930s to 1970s. California, Illinois, New Jersey are the states with most movie stars. Even so, none of state or regions is predominant.
+
+![img](/img/city.png)
+
+2. Movie Review Anlaysis
+I use NLTK to spem the words and only picked adj and noun for word cloud. See which words are frequcely refereced in the best movies.
+
+![img](/img/review.png)
+
+I didn't do word sentiment anlaysis in this project, but you can find in my other project- [here](https://github.com/neoaksa/tensorflowDemo/tree/master/wordSentimentDemo).
