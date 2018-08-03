@@ -25,6 +25,8 @@ ITEM_PIPELINES = {
    'IMDB_Spider.pipelines.Pipeline': 300,
 }
 ```
+> Movie_Analysis.ipynb
+>  jupyter analysis report 
 
 ### How to use
 Use console to the project folder, then run "scrapy crawl imdbspider", where `imdbspider` is project name which you can find in `IMDb_spider.py`.
@@ -62,6 +64,7 @@ list: show all project names
 shell: start URL parse
 
 ### Report
+more information and code see [here](https://github.com/neoaksa/IMDB_Spider/blob/master/Movie_Analysis.ipynb)
 1. star anlaysis
 Accordig this breif table blew, we can find `Robert De Niro` took the most movies in top 250 list. Followed by `Harrison`,`Tom` and `Leonardo`.
 
