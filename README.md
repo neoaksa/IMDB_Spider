@@ -88,3 +88,7 @@ I use NLTK to spem the words and only picked adj and noun for word cloud. See wh
 ![img](/img/review.png)
 
 I didn't do word sentiment anlaysis in this project, but you can find in my other project- [here](https://github.com/neoaksa/tensorflowDemo/tree/master/wordSentimentDemo).
+
+### Future Imporvement
+1. add movie type and release year for each movie when crawling and corresponsding analysis block.
+2. find the movie stars' "well done" areas over movie type(category)
